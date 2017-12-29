@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyDar.ServiceLocator.NetStandard", "CyDar.ServiceLocator\CyDar.ServiceLocator.csproj", "{28484030-08DB-4BA7-8B00-05F9A7C7AF55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyDar.ServiceLocator.NetStandard.Tests", "CyDar.ServiceLocator.Tests\CyDar.ServiceLocator.Tests.csproj", "{2A688B38-C628-4DE2-932A-178F11690C3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28484030-08DB-4BA7-8B00-05F9A7C7AF55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28484030-08DB-4BA7-8B00-05F9A7C7AF55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28484030-08DB-4BA7-8B00-05F9A7C7AF55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28484030-08DB-4BA7-8B00-05F9A7C7AF55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A688B38-C628-4DE2-932A-178F11690C3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A688B38-C628-4DE2-932A-178F11690C3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A688B38-C628-4DE2-932A-178F11690C3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A688B38-C628-4DE2-932A-178F11690C3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

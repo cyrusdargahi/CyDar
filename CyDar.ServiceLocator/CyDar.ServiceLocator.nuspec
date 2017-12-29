@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>CyDar.ServiceLocator</id>
+    <version>1.0.0</version>
+    <title>CyDar Service Locator</title>
+    <authors>Cyrus Dargahi</authors>
+    <owners>Cyrus Dargahi</owners>
+    <copyright>Copyright © 2017-2018 Cyrus Dargahi</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This is an implementation of service locator pattern and makes it easy to create singeltons and resolve different concrete implementations based on conditions. InversionOfControl will not do any dependency injection and does not rely on reflection which makes it light weight. But wait there is more...!</description>
+    <releaseNotes>
+      <![CDATA[
+      ]]>
+    </releaseNotes>
+    <tags>InversionOfControl ServiceLocator IOC</tags>
+    <dependencies>
+      <group></group>
+      <group targetFramework="portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10">
+      </group>
+      <group targetFramework="net45">
+        <dependency id="Castle.Core" version="4.2.1" />
+      </group>
+      <group targetFramework="netstandard1.4">
+        <dependency id="Castle.Core" version="4.2.1" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\$configuration$\net45\**\CyDar*.dll" target="lib\net45" />
+    <file src="bin\$configuration$\netstandard1.4\**\CyDar*.dll" target="lib\netstandard1.4" />
+    <file src="bin\$configuration$\portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\**\CyDar*.dll" target="lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10" />
+  </files>
+</package>

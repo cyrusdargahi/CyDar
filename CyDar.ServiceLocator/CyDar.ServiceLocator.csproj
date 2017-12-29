@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net45;netstandard1.4;portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10</TargetFrameworks>
+    <PackageId>CyDar.ServiceLocator</PackageId>
+    <Authors>Cyrus Dargahi</Authors>
+    <Company></Company>
+    <Product>CyDar.ServiceLocator</Product>
+    <Copyright>Copyright © 2016-2018 Cyrus Dargahi</Copyright>
+    <AssemblyName>CyDar.ServiceLocator</AssemblyName>
+    <RootNamespace>CyDar.ServiceLocator</RootNamespace>
+    <PackageTags>InversionOfControl ServiceLocator IOC</PackageTags>
+    <Description>This is an implementation of service locator pattern and makes it easy to create singeltons and resolve different concrete implementations based on conditions. InversionOfControl will not do any dependency injection and does not rely on reflection which makes it light weight. But wait there is more...!</Description>
+    <Version>1.0.0</Version>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <NeutralLanguage />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)|$(Platform)'=='net45|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG;NET45</DefineConstants>
+    <AssemblyTitle>CyDar ServiceLocator</AssemblyTitle>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)|$(Platform)'=='portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG;PORTABLE</DefineConstants>
+    <AssemblyTitle>CyDar ServiceLocator Portable</AssemblyTitle>
+    <TargetFrameworkIdentifier>.NETPortable</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
+    <NugetTargetMoniker>.NETPortable,Version=v0.0,Profile=Profile259</NugetTargetMoniker>
+    <MSBuildExtensionsPath32 Condition="'$(BuildingInsideVisualStudio)' != 'true'">C:\Program Files (x86)\MSBuild</MSBuildExtensionsPath32>
+    <LanguageTargets>$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets</LanguageTargets>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)|$(Platform)'=='netstandard1.4|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG;NETSTANDARD1_4</DefineConstants>
+    <AssemblyTitle>CyDar ServiceLocator .NET Standard 1.4</AssemblyTitle>
+    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)'=='portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10'">
+    <Compile Remove="Proxy\**" />
+    <EmbeddedResource Remove="Proxy\**" />
+    <None Remove="Proxy\**" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net45' OR '$(TargetFramework)' == 'netstandard1.4'">
+    <PackageReference Include="Castle.Core" Version="4.2.1" />
+  </ItemGroup>
+
+</Project>
