@@ -8,12 +8,14 @@
     <Copyright>Copyright © 2016-2018 Cyrus Dargahi</Copyright>
     <AssemblyName>CyDar.ServiceLocator</AssemblyName>
     <RootNamespace>CyDar.ServiceLocator</RootNamespace>
-    <PackageTags>InversionOfControl ServiceLocator IOC</PackageTags>
-    <Description>This is an implementation of service locator pattern and makes it easy to create singeltons and resolve different concrete implementations based on conditions. InversionOfControl will not do any dependency injection and does not rely on reflection which makes it light weight. But wait there is more...!</Description>
+    <PackageTags>InversionOfControl ServiceLocator IOC Interceptor</PackageTags>
+    <Description>This is an implementation of service locator pattern with the intent to make it easier to create singeltons and resolve different concrete implementations based on conditions. This library does not implement DI patterns and does not rely on reflection which makes it light weight.</Description>
     <Version>1.0.0</Version>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageReleaseNotes></PackageReleaseNotes>
     <NeutralLanguage />
+    <PackageLicenseUrl>https://github.com/cyrusdargahi/CyDar.ServiceLocator/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/cyrusdargahi/CyDar.ServiceLocator</PackageProjectUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(TargetFramework)|$(Platform)'=='net45|AnyCPU'">
