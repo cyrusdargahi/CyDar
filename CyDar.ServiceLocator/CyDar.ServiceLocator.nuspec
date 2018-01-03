@@ -9,6 +9,8 @@
     <copyright>Copyright © 2017-2018 Cyrus Dargahi</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>This is an implementation of service locator pattern with the intent to make it easier to create singeltons and resolve different concrete implementations based on conditions. This library does not implement DI patterns and does not rely on reflection which makes it light weight. But wait there is more...!</description>
+    <licenseUrl>https://github.com/cyrusdargahi/CyDar.ServiceLocator/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/cyrusdargahi/CyDar.ServiceLocator</projectUrl>
     <releaseNotes>
       <![CDATA[
       ]]>
