@@ -8,7 +8,7 @@
     <owners>Cyrus Dargahi</owners>
     <copyright>Copyright © 2017-2018 Cyrus Dargahi</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>This is an implementation of service locator pattern and makes it easy to create singeltons and resolve different concrete implementations based on conditions. InversionOfControl will not do any dependency injection and does not rely on reflection which makes it light weight. But wait there is more...!</description>
+    <description>This is an implementation of service locator pattern with the intent to make it easier to create singeltons and resolve different concrete implementations based on conditions. This library does not implement DI patterns and does not rely on reflection which makes it light weight. But wait there is more...!</description>
     <releaseNotes>
       <![CDATA[
       ]]>
