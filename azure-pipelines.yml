@@ -60,7 +60,7 @@ steps:
 
     nuGetFeedType: external
 
-    publishFeedCredentials: 'nuget.org Push'
+    publishFeedCredentials: 'NugetOrgConnection'
 
   enabled: false
 
